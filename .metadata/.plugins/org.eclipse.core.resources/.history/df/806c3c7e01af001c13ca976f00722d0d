@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class room_size {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scnr = new Scanner(System.in);
+		System.out.println("Welcome to Grand Circus’ Room Detail Generator!");
+		System.out.println("Enter length of room:");
+		String choice = scnr.next();
+		
+	}
+
+}

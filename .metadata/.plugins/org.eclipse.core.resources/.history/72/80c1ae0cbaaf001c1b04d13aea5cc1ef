@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class room_size {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		Scanner scnr = new Scanner(System.in);
+		System.out.println("Welcome to Grand Circus' Room Detail Generator!");
+		System.out.println("Would you like to use the calculator? (Y/N)");
+		String userChoice = scnr.next();
+		
+		while (!(userChoice.substring(0,1).equalsIgnoreCase("Y")) && !(userChoice.substring(0,1).equalsIgnoreCase("N"))) {
+			System.out.println("Please enter Y or N.");
+			userChoice = scnr.next();
+		}
+		
+		while (userChoice.substring(0,1).equalsIgnoreCase("Y")) {
+			
+			System.out.println("Enter Length:");
+			double length = scnr.nextDouble();
+			System.out.println("Enter Width:");
+			
+			double width = scnr.nextDouble();
+			double area = length * width;
+			double perimeter = (length + width) * 2;
+			
+			System.out.println("Area: " + area);
+			System.out.println("Perimeter: " + perimeter);
+			
+			System.out.println("Would you like to try again? (Y/N)");
+			userChoice = scnr.next();
+			
+			while (!(userChoice.substring(0,1).equalsIgnoreCase("Y")) && !(userChoice.substring(0,1).equalsIgnoreCase("N"))) {
+				System.out.println("Please enter Y or N.");
+				userChoice = scnr.next();
+			}
+		}
+		
+		System.out.println("Thank you, goodbye.");
+		scnr.close();
+	}
+	
+	
+	}
+	
+
+
+
+
